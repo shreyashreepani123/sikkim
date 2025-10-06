@@ -1,0 +1,78 @@
+/* src/styles/manuscriptHub.css */
+
+.mh-wrap {
+  min-height: 100vh;
+  background: #fdfaf6;
+  padding: 2rem 1.25rem;
+}
+
+.mh-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #4a2c18;
+  margin: 0.5rem 0 0.25rem;
+  font-weight: 800;
+}
+
+.mh-sub {
+  text-align: center;
+  color: #6a4a33;
+  margin-bottom: 2rem;
+}
+
+.mh-topbar {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.mh-back {
+  color: #7a4d2b;
+  text-decoration: none;
+  font-weight: 600;
+}
+.mh-back:hover { text-decoration: underline; }
+
+.mh-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+@media (max-width: 1400px) { .mh-grid { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 1024px) { .mh-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 768px)  { .mh-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px)  { .mh-grid { grid-template-columns: 1fr; } }
+
+.mh-card {
+  display: block;
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.25rem;
+  text-decoration: none;
+  color: #2b201a;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+.mh-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.12);
+  background: #fffefe;
+}
+
+.mh-icon { font-size: 2.2rem; }
+.mh-card-title { font-size: 1.25rem; margin-top: .75rem; font-weight: 700; color:#4a2c18;}
+.mh-card-desc  { font-size: .95rem; color:#6a4a33; margin-top: .35rem; }
+
+/* list rows (journals/archive) */
+.mh-list { display:flex; flex-direction:column; gap:.75rem; max-width:1000px; margin:0 auto; }
+.mh-row {
+  display:flex; align-items:flex-start; gap:1rem;
+  background:#fff; padding:1rem; border-radius:12px;
+  box-shadow:0 8px 24px rgba(0,0,0,.07);
+}
+.mh-row.link { text-decoration:none; color:inherit; }
+.mh-row-icon { font-size:1.4rem; margin-top:.25rem; }
+.mh-row-main { flex:1; }
+.mh-row-title { font-weight:700; color:#4a2c18; }
+.mh-row-note { font-size:.95rem; color:#6a4a33; margin-top:.15rem; }
+.mh-row-date { color:#7a4d2b; font-weight:600; }

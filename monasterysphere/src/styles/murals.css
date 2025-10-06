@@ -1,0 +1,80 @@
+/* src/styles/murals.css */
+
+.murals-wrap {
+  min-height: 100vh;
+  background: #fdfaf6;
+  padding: 2rem 1.25rem;
+}
+
+.murals-topbar {
+  margin-bottom: 1rem;
+}
+.murals-back {
+  color: #7a4d2b;
+  text-decoration: none;
+  font-weight: 600;
+}
+.murals-back:hover {
+  text-decoration: underline;
+}
+
+.murals-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #4a2c18;
+  font-weight: 800;
+}
+.murals-sub {
+  text-align: center;
+  color: #6a4a33;
+  margin-bottom: 2rem;
+}
+
+/* Gallery grid */
+.murals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+.murals-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.murals-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+.murals-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Description box */
+.murals-description {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+}
+.murals-description h2 {
+  font-size: 1.6rem;
+  color: #4a2c18;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.murals-description p {
+  font-size: 1rem;
+  color: #5a3928;
+  margin-bottom: 1rem;
+  text-align: justify;
+}

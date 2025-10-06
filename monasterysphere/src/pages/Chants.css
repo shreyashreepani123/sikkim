@@ -1,0 +1,51 @@
+.chants-page {
+  background: #faf7ef;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.chants-page h2 {
+  font-size: 2rem;
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.chants-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.chant-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;   /* ✅ limits card width */
+  width: 100%;
+}
+
+.chant-item h3 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.chant-item video {
+  width: 100%;
+  max-width: 500px;  /* ✅ limit video width */
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+  display: block;
+  margin: 0 auto;    /* ✅ center it */
+}

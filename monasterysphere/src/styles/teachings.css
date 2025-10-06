@@ -1,0 +1,125 @@
+/* General Page */
+.teachings-page {
+  background: linear-gradient(180deg, #fffaf2, #fefdfc);
+  font-family: 'Merriweather', serif;
+  color: #2c2c2c;
+  padding: 30px;
+  line-height: 1.8;
+}
+
+/* Title */
+.teachings-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #c62828;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Hero Section */
+.teachings-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.teachings-hero img {
+  max-width: 280px;
+  border-radius: 50%;
+  border: 6px solid #f8e1a1;
+  box-shadow: 0px 8px 18px rgba(0,0,0,0.2);
+  background: #fff;
+}
+
+.teachings-hero p {
+  margin-top: 15px;
+  font-style: italic;
+  color: #6b4f28;
+  font-size: 1.2rem;
+}
+
+/* Content Sections */
+.section-card {
+  background: #ffffff;
+  padding: 25px 35px;
+  margin: 25px auto;
+  border-radius: 16px;
+  max-width: 950px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.section-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Section Titles */
+.section-card h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #8b0000;
+  border-left: 6px solid #f7b733;
+  padding-left: 12px;
+  background: linear-gradient(to right, #fceabb, #f8b500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Paragraph Text */
+.section-card p {
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  text-align: justify;
+}
+
+/* Lists */
+.section-card ul {
+  margin-left: 20px;
+  padding-left: 15px;
+}
+
+.section-card ul li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+/* Highlighted Keywords */
+.highlight {
+  color: #c62828;
+  font-weight: bold;
+}
+
+/* Scrollable large sections */
+.scrollable {
+  max-height: 450px;
+  overflow-y: auto;
+  padding-right: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #f7b733 #fff;
+}
+
+.scrollable::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  background: #f7b733;
+  border-radius: 6px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .teachings-title {
+    font-size: 2.2rem;
+  }
+  .section-card {
+    padding: 20px;
+  }
+  .teachings-hero img {
+    max-width: 200px;
+  }
+}
